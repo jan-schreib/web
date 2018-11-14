@@ -5,7 +5,7 @@ extern crate actix_web;
 use actix_web::{server, App, HttpRequest};
 
 fn index(_req: &HttpRequest) -> &'static str {
-    "Hello World"
+    "Hello World 2"
 }
 
 /// Look up our server port number in PORT, for compatibility with Heroku.
