@@ -15,7 +15,7 @@ fn get_server_port() -> String {
 
 fn main() {
     server::new(|| App::new().resource("/", |r| r.f(index)))
-        .bind(format!("{}:{}", "127.0.0.1", get_server_port()))
+        .bind(format!("{}:{}", "0.0.0.0", get_server_port()))
         .unwrap()
         .run();
 }
